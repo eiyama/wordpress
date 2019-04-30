@@ -1,7 +1,9 @@
 <?php 
-		if('page' == get_option('show_on_front')){ get_template_part('index');}
-
-		else {get_header();
+		if('page' == get_option('show_on_front')){ 
+			get_template_part('index');
+		} else {
+		
+		get_header();
 		
 		//****** get index static banner  ********
 		get_template_part('index', 'slider');
@@ -18,5 +20,7 @@
 		get_template_part('index', 'news');
 				
 		get_footer();
-		}
+
+		// get_customer();
+	}
 ?>

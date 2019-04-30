@@ -2,7 +2,9 @@
 /**Theme Name	: Appointment
  * Theme Core Functions and Codes
 */
+
 	/**Includes reqired resources here**/
+
 	define('WEBRITI_TEMPLATE_DIR_URI', get_template_directory_uri());
     define('WEBRITI_TEMPLATE_DIR' , get_template_directory());
     define('WEBRITI_THEME_FUNCTIONS_PATH' , WEBRITI_TEMPLATE_DIR.'/functions');
@@ -37,6 +39,8 @@
 	require( WEBRITI_THEME_FUNCTIONS_PATH . '/custom-controls/select/category-dropdown-custom-control.php');
 	/* Theme Setup Function */
 	add_action( 'after_setup_theme', 'appointment_setup' );
+
+	add_custom_background();
 	
 	function appointment_setup()
 	{	
@@ -99,8 +103,6 @@ function appointment_add_to_author_profile( $contactmethods ) {
 		return $contactmethods;
 		}
 		add_filter( 'user_contactmethods', 'appointment_add_to_author_profile', 10, 1);
-	
-	
 	    add_filter('get_the_excerpt','appointment_post_slider_excerpt');
 	    function appointment_post_slider_excerpt($output){
 		$output = strip_tags(preg_replace(" (\[.*?\])",'',$output));

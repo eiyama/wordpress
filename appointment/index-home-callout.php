@@ -32,6 +32,6 @@ else
 			
 	</div>	
 </div> 
-<!-- /Callout Section -->
+
 <div class="clearfix"></div>
 <?php } ?> -->

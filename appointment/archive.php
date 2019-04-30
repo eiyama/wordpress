@@ -5,7 +5,7 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<div class="page-title"><h1>
+					<div class="page-title"><h1>222
         <?php if ( is_day() ) : ?>
         <?php  _e( "Daily Archive", 'appointment' ); echo ' '; echo (get_the_date()); ?>
         <?php elseif ( is_month() ) : ?>

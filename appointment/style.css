@@ -372,6 +372,40 @@ h6,
 .carou-direction-nav a.carou-next:before {
 	content: '\f105';
 }
+/* customer客户服务 */
+.customer_main{
+	min-height: 900px;
+}
+
+/* infotmation财经资讯 */
+.information_main{
+	min-height: 900px;
+}
+.information_banner{
+	background: url("images/customer_bg.png") 0 0 no-repeat;
+	height: 400px;
+	width: 100%;
+}
+
+/* 新闻 */
+.news_main{
+	height: 900px;
+}
+
+/*帮助中心  */
+.assist_main{
+	min-height: 900px;
+}
+/* 公司简介 */
+.introduce_main{
+min-height: 900px;
+}
+
+
+
+
+
+
 
 /*--------Slider Fade Effect-----------*/
 .carousel.carousel-fade .item {
@@ -462,23 +496,24 @@ h6,
 	position: relative;
 	width: 97.4%;
 	text-align: center;
+	position: relative
 }
 
-.section-heading-title h1 {
+.section-heading-title h2 {
 	color: #242526;
 	font-family: 'Open Sans';
 	font-weight: 400;
 	margin: 0 0 10px;
 }
 
-.section-heading-title p {
-	color: #727272;
-	font-family: 'Open Sans';
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 25px;
-	margin: 0 0 0px;
+.section-heading-title i{
+	position: absolute;
+	top: 12px;
+    left: 40%;
 }
+
+
+
 
 /*Service Section-----------------------------------------------------------------------------------------------*/
 .Service-section {
@@ -764,6 +799,11 @@ height: 98%;
 
 }
 /* 新闻 */
+.section-heading-title span{
+	position: absolute;
+	top: 12px;
+    left: 44%;
+}
 .news_ul{
 	height: 460px;
 	width: 100%;
@@ -798,6 +838,31 @@ height: 98%;
 	height:392px;
 	width: 100%;
 }
+.corporate_value .value_center_header{
+	width: 100%;
+	padding-top: 60px;
+	margin: auto;
+	/* margin-top: 55px; */
+	position: relative;
+	text-align: center;
+}
+.value_center_header h3{
+	padding:0;
+	font-size: 30px;
+	color:#ffffff;
+	font-weight: 500;
+	text-align: center;
+
+}
+.value_center_header i{
+	position: absolute;
+	top: 68px;
+    left: 40%;
+}
+.value_center_header em{
+	margin-left: -5px; 
+}
+
 .corporate_value_center{
 	width: 1000px;
 	height: 100%;
@@ -816,15 +881,26 @@ height: 98%;
 	height: 62px;
 	margin: auto;
 	/* margin-top: 55px; */
+	position: relative;
+	text-align: center;
 }
 .about_header h3{
-	margin: 0;
 	padding:0;
 	font-size: 26px;
 	color:#303030;
 	font-weight: 800;
 	text-align: center;
+	margin: 0 0 10px 0;
 }
+.about_header i{
+	position: absolute;
+	top: 5px;
+    left: 43%;
+}
+.about_header em{
+	margin-left: -5px; 
+}
+
 .about .about_body{
 	margin-top: 56px;
 
@@ -986,7 +1062,7 @@ height: 98%;
 
 /*Footer Widget Section--------------------------------------------------------------------------------------*/
 .footer-section {
-	background-color: #f4f4f4;
+	background-color: #202020;
 	padding: 80px 0 0;
 	width: 100%;
 }
@@ -1179,16 +1255,103 @@ height: 98%;
 
 .footer-copyright-section {
 	height: 190px;
-	background-color: #ffffff;
+	background-color: #202020;
 	border-top: 1px solid #f4f4f4;
 	margin: 0;
 	padding: 0;
 	width: 100%;
 }
-
-.footer-copyright {
+.footer_box{
+	margin: 0 auto;
+	width: 1290px;
+	height: 130px;
 	padding: 30px 0;
 }
+.footer_box .footer_left{
+	float: left;
+	width: 900px;
+	height: 130px;
+
+}
+
+.footer_box .footer_left .footer_ul{
+	width: 565px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	height: 64px;
+	
+}
+.footer_left .footer_ul li{
+	float: left
+}
+.footer_left .footer_ul li a p{
+	color: #c0c0c0;
+ }
+.footer_left_center{
+	height: 46px;
+}
+.footer_logo{
+	float: left;
+	width: 140px;
+	height: 100%;	
+}
+.footer_logo img{
+	margin-top: 7px;
+}
+.zf-introduce{
+	width: 530px;
+	float: left;
+	height: 100%;
+}
+.zf-introduce p{
+	font-size: 12px;
+	color: #6d6d6d;
+	margin: 0;
+	padding: 0;
+}
+
+.copyright{
+height: 24px;
+width: 100%;
+}
+.copyright p{
+	float:left;
+	font-size: 12px;
+	color:#6d6d6d;
+	margin: 0;
+	padding: 0;
+}
+.copyright .copyright_font a{
+	font-size: 12px;
+	color:#c0c0c0;
+}
+
+.footer_right{
+	border-left: 1px solid #505050;
+	float: left;
+}
+.footer_right span{
+	display: block;
+	margin-left: 43px;
+}
+.footer_right span p{
+	font-size: 14px;
+	color: #808080;
+}
+.footer_right span h3{
+	color: #a0a0a0;
+	font-size: 25px;
+}
+.footer_right span i{
+	color: #767676;
+}
+.footer_right span em {
+	color: #767676;
+}
+
+
 
 .footer-copyright p {
 	color: #727272;
@@ -1270,6 +1433,22 @@ height: 98%;
 	transition: color 0.3s ease-in-out 0s;
 }
 
+
+/* 简体繁体 */
+.footer-section{
+	position: absolute;
+	top: 70px;
+	right: 0;
+	width: 130px;
+	height: 20px;
+	background: none;
+	padding: 0;
+}
+
+.head-contact-social{
+	display: none
+}
+
 /*Page Title Section Css-------------------------------------------------------------------------------------*/
 .page-title-section {
 	height: 100%;
@@ -1277,6 +1456,7 @@ height: 98%;
 	overflow: hidden;
 	padding: 0;
 	width: 100%;
+	display: none
 }
 
 .page-title-section .overlay {
@@ -1345,6 +1525,7 @@ height: 98%;
 .page-builder {
 	margin: 0px;
 	padding: 80px 0 0;
+	min-height: 900px;
 }
 
 .media-body {
@@ -1359,6 +1540,7 @@ height: 98%;
 	padding: 0px;
 	text-align: center;
 	width: 70px;
+	display: none;
 }
 
 .blog-post-date-area .date {
@@ -1433,6 +1615,7 @@ height: 98%;
 	margin: 0px 0 16px;
 	padding: 0;
 	width: 100%;
+	display: none;
 }
 
 .blog-post-lg a>img {
@@ -1763,6 +1946,7 @@ a.more-link:focus {
 	margin: 0 0 8px;
 	padding-left: 0px;
 	vertical-align: middle;
+
 }
 
 .comment-date a {
@@ -1927,6 +2111,7 @@ a.more-link:focus {
 	margin-bottom: 80px;
 	margin-left: 0;
 	padding: 30px 20px 30px 20px;
+	display: none;
 }
 
 .sidebar-section-left {

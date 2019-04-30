@@ -10,10 +10,8 @@
 	if($header_setting['upload_image_favicon']!=''){ ?>
 	<link rel="shortcut icon" href="<?php  echo $header_setting['upload_image_favicon']; ?>" /> 
 	<?php } ?>
-	<!-- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
 	<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?> >
@@ -30,28 +28,26 @@
 	<img class="img-responsive" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
 </div>
 <?php } ?>
-
-
 <!--Logo & Menu Section-->	
 <nav class="navbar navbar-default">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
 				<?php if($header_setting['text_title'] == 1) { ?>
-				<h1><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<h1><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Appointment">
 				<?php
 					 if($header_setting['enable_header_logo_text'] == 1) 
 					{ echo "<div class=appointment_title_head>" . get_bloginfo( ). "</div>"; }
 					elseif($header_setting['upload_image_logo']!='') 
 					{ ?>
-					<img class="img-responsive" src="<?php echo $header_setting['upload_image_logo']; ?>" style="height:<?php echo $header_setting['height']; ?>px; width:<?php echo $header_setting['width']; ?>px;"/>
+					<img class="img-responsive" src="<?php echo $header_setting['upload_image_logo']; ?>"/>
 					<?php } else { ?>
-					<img src="<?php echo WEBRITI_TEMPLATE_DIR_URI; ?>/images/logo.png">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bluedark.png">
 					<?php } ?>
 				</a></h1>
 				<?php } ?>	
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only"><?php echo 'Toggle navigation'; ?></span>
+				<span class="sr-only"><?php _e('Toggle navigation','appointment-blue'); ?></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>

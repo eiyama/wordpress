@@ -9,7 +9,9 @@ if($news_setting['home_blog_enabled'] == 0 ) { ?>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="section-heading-title">
-					<h1>新闻</h1>
+					<span><img src="<?php echo WEBRITI_TEMPLATE_DIR_URI; ?>/images/icon_03.png"></span>
+					<h2>新闻</h2>
+					<em><img src="<?php echo WEBRITI_TEMPLATE_DIR_URI; ?>/images/bottom_03.png"></em>
 				</div>
 			</div>
 		</div>
@@ -31,7 +33,7 @@ if($news_setting['home_blog_enabled'] == 0 ) { ?>
 				<li class="news_ul_li">
 					<img src="<?php echo WEBRITI_TEMPLATE_DIR_URI; ?>/images/news_05.png">
 					<h3>【媒体报道】中富证券:900万挑战大集中</h3>
-					<p>香港4月3日 - 米蘭站 [01150] 現報0.11港元，較前收市0.11 港元下跌 0.012港元或9.84%，今日最高價</p>
+					<p>香港4月3日 - 米蘭站 [01150] 現報0.11港元，較前收市0.11 港元下跌 0.012港元或9.84%，今日最高價0.122港元，最低價0.11港元...</p>
 					<i>2017-07-21</i>
 				</li>		
 			</ul>
@@ -45,9 +47,9 @@ if($news_setting['home_blog_enabled'] == 0 ) { ?>
 	<div class="corporate_value">
 		<div class="corporate_value_center">
 			<div class="value_center_header">
-				<i></i>
-				<h3>价值观</h3>
-				<span></span>
+					<i><img src="<?php echo WEBRITI_TEMPLATE_DIR_URI; ?>/images/icon_03.png"></i>
+					<h3>价值观</h3>
+					<em><img src="<?php echo WEBRITI_TEMPLATE_DIR_URI; ?>/images/bottom_03.png"></em>
 			</div>
 			<ul class="value_center_body">
 				<li>
@@ -60,9 +62,9 @@ if($news_setting['home_blog_enabled'] == 0 ) { ?>
 	<!-- 关于 -->
 	<div class="about">
 		<div class="about_header">
-			<i></i>
-			<h3>关于</h3>
-			<span></span>
+				<i><img src="<?php echo WEBRITI_TEMPLATE_DIR_URI; ?>/images/icon_03.png"></i>
+				<h3>关于</h3>
+				<em><img src="<?php echo WEBRITI_TEMPLATE_DIR_URI; ?>/images/bottom_03.png"></em>
 		</div>
 		<div class="about_body"> 
 			<p>中富證券服務範圍包括證券買賣、代辦認購首次公開招股、上市包銷配售及證券托管服務等。公司本著積極進取的精神，秉承專業及責任的核心價值觀，

@@ -9,8 +9,9 @@ if($service_setting['service_section_enabled'] == 0 ) { ?>
 			<div class="col-md-12">
 			
 				<div class="section-heading-title">
-					<h1>交易平台</h1>
-					<p></p>
+					<i><img src="<?php echo WEBRITI_TEMPLATE_DIR_URI; ?>/images/icon_03.png"></i>
+					<h2>交易平台</h2>
+					<em><img src="<?php echo WEBRITI_TEMPLATE_DIR_URI; ?>/images/bottom_03.png"></em>
 				</div>
 			</div>
 		</div>
@@ -28,7 +29,7 @@ if($service_setting['service_section_enabled'] == 0 ) { ?>
 							<li><p>简易</p></li>
 						</ul>
 						<div class="into_system">
-							<a href="#"><p> 进入系统</p></a>
+							<a href="https://www.2goasp.com/srwealth_portal/index"><p> 进入系统</p></a>
 							<i> </i> 
 						</div>
 					</div>
@@ -50,7 +51,7 @@ if($service_setting['service_section_enabled'] == 0 ) { ?>
 							<p>三分钟急速开户</p>
 						</li>
 					</ul>
-					<div class="main_right_btn"><a href="#" ><p> 免费开户</p></a></div>
+					<div class="main_right_btn"><a href="/wordpress/register" ><p> 免费开户</p></a></div>
 
 
 				</div>
